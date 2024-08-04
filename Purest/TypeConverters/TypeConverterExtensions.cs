@@ -23,7 +23,7 @@ public static class TypeConverterExtensions
     /// <param name="from">From.</param>
     /// <param name="outValue">The out value.</param>
     /// <returns></returns>
-    public static bool TryConvertTo<TOut>(object from, out TOut outValue)
+    public static bool TryConvertTo<TOut>(object? from, out TOut outValue)
     {
         try
         {
@@ -60,7 +60,7 @@ public static class TypeConverterExtensions
     /// or
     /// type converter from {fromType} to {toType} not registered
     /// </exception>
-    public static To ConvertTo<To>(this object from)
+    public static To ConvertTo<To>(this object? from)
     {
         if (from is To to)
         {

@@ -431,4 +431,89 @@ public static partial class MathExtensions
     {
         return (float)Math.Round((double)value, decimals, mode);
     }
+
+    /// <summary>
+    /// is number
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
+    public static bool IsNumber(object? obj)
+    {
+        return IsNumber(obj, out _);
+    }
+
+    /// <summary>
+    /// is number
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <param name="doubleValue"></param>
+    /// <returns></returns>
+    public static bool IsNumber(object? obj, out double doubleValue)
+    {
+        doubleValue = 0d;
+        if (obj is null)
+        {
+            return false;
+        }
+
+        if (obj is sbyte @sbyte)
+        {
+            doubleValue = @sbyte;
+            return true;
+        }
+
+        if (obj is byte @byte)
+        {
+            doubleValue = @byte;
+            return true;
+        }
+
+        if (obj is short @short)
+        {
+            doubleValue = @short;
+            return true;
+        }
+        if (obj is ushort @ushort)
+        {
+            doubleValue = @ushort;
+            return true;
+        }
+        if (obj is int @int)
+        {
+            doubleValue = @int;
+            return true;
+        }
+        if (obj is uint @uint)
+        {
+            doubleValue = @uint;
+            return true;
+        }
+        if (obj is long @long)
+        {
+            doubleValue = @long;
+            return true;
+        }
+        if (obj is ulong @ulong)
+        {
+            doubleValue = @ulong;
+            return true;
+        }
+        if (obj is float @false)
+        {
+            doubleValue = @false;
+            return true;
+        }
+        if (obj is double @double)
+        {
+            doubleValue = @double;
+            return true;
+        }
+        if (obj is decimal @decimal)
+        {
+            doubleValue = (double)@decimal;
+            return true;
+        }
+
+        return false;
+    }
 }
