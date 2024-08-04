@@ -13,7 +13,7 @@
 		<UseWPF>true</UseWPF>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<LangVersion>11</LangVersion>
-		<Description>definition and writing of animations、converters、markup extensions in wpf xaml</Description>
+		<Description>definition and writing of animations , converters , markup extensions in wpf xaml</Description>
 	</PropertyGroup>
 
 

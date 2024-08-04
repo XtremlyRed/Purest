@@ -15,7 +15,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solutionItems", ".solution
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PurestTests", "PurestTests\PurestTests.csproj", "{C1DEB2D4-A608-4840-9A1F-88201E365973}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PurestTests", "PurestTests\PurestTests.csproj", "{C1DEB2D4-A608-4840-9A1F-88201E365973}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Purest.MAUI", "Purest.MAUI\Purest.MAUI.csproj", "{9B7FD6C2-96A2-4030-BC38-8F34471FF9DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{C1DEB2D4-A608-4840-9A1F-88201E365973}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1DEB2D4-A608-4840-9A1F-88201E365973}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1DEB2D4-A608-4840-9A1F-88201E365973}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B7FD6C2-96A2-4030-BC38-8F34471FF9DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B7FD6C2-96A2-4030-BC38-8F34471FF9DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B7FD6C2-96A2-4030-BC38-8F34471FF9DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B7FD6C2-96A2-4030-BC38-8F34471FF9DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
